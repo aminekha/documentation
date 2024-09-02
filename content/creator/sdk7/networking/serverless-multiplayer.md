@@ -32,6 +32,8 @@ The first two options are covered in this document. They are simpler, as they re
 To mark an entity as synced, use the `syncEntity` function:
 
 ```ts
+import { syncEntity } from '@dcl/sdk/network'
+
 const doorEntity = engine.addEntity()
 
 syncEntity(doorEntity, [Transform.componentId, Animator.componentId], 1)
